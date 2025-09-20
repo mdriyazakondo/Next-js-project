@@ -32,6 +32,16 @@ const Navbar = () => {
               Meals
             </li>
           </Link>
+          <Link href="/products">
+            <li className=" font-semibold cursor-pointer text-gray-500">
+              Products
+            </li>
+          </Link>
+          <Link href="/products/add">
+            <li className=" font-semibold cursor-pointer text-gray-500">
+              Add Products
+            </li>
+          </Link>
         </ul>
       </nav>
       <button className="font-medium bg-green-600 px-6 py-1.5 hover:bg-green-700 rounded-md text-white cursor-pointer">

@@ -23,6 +23,7 @@ const MealSearch = () => {
         type="text"
         name=""
         id=""
+        placeholder="Search......."
         className="w-full border py-1.5 pl-4 outline-none rounded-md border-gray-400"
         onChange={(e) => setSearch(e.target.value)}
       />
