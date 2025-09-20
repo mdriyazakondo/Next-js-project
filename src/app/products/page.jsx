@@ -1,4 +1,5 @@
 "use client";
+import { redirect } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const Products = () => {
@@ -11,6 +12,9 @@ const Products = () => {
       });
       const products = await res.json();
       setProductsData(products);
+      // if (products.length > 3) {
+      //   redirect("/");
+      // }
     };
     productData();
   }, []);

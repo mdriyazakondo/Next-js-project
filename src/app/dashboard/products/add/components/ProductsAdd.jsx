@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const ProductsAdd = () => {
-  const [products, setProducts] = useState([]);
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
     const from = e.target;
@@ -20,6 +20,8 @@ const ProductsAdd = () => {
     });
     const result = await res.json();
     from.reset();
+    router.push("/products");
+    router.refresh();
   };
   return (
     <div className="max-w-3xl mx-auto min-h-screen flex items-center justify-center">
